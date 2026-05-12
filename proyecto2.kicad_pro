@@ -228,7 +228,15 @@
     },
     "layer_pairs": [],
     "layer_presets": [],
-    "viewports": []
+    "viewports": [
+      {
+        "h": 42872967.032967016,
+        "name": "pcb1",
+        "w": 79549450.54945052,
+        "x": 172254221.35165292,
+        "y": 113988842.48351954
+      }
+    ]
   },
   "boards": [],
   "component_class_settings": {
@@ -670,7 +678,7 @@
         "uuid": "2acde91a-b0f1-4d66-bbdb-3257e67dbab9"
       }
     ],
-    "used_designators": "",
+    "used_designators": "U2",
     "variants": []
   },
   "sheets": [

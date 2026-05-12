@@ -1272,7 +1272,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Timer:NE555D"
+		(symbol "Timer:NE555P"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1289,7 +1289,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "NE555D"
+			(property "Value" "NE555P"
 				(at 2.54 8.89 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1300,7 +1300,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
 				(at 0 -24.13 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1322,7 +1322,7 @@
 					)
 				)
 			)
-			(property "Description" "Precision Timers, 555 compatible, SOIC-8"
+			(property "Description" "Precision Timers, 555 compatible, PDIP-8"
 				(at 0 -21.59 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1344,7 +1344,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm*"
+			(property "ki_fp_filters" "DIP*W7.62mm*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1355,7 +1355,7 @@
 					)
 				)
 			)
-			(symbol "NE555D_0_0"
+			(symbol "NE555P_0_0"
 				(pin power_in line
 					(at 0 -10.16 90)
 					(length 2.54)
@@ -1393,7 +1393,7 @@
 					)
 				)
 			)
-			(symbol "NE555D_0_1"
+			(symbol "NE555P_0_1"
 				(rectangle
 					(start -7.62 7.62)
 					(end 7.62 -7.62)
@@ -1406,7 +1406,7 @@
 					)
 				)
 			)
-			(symbol "NE555D_1_1"
+			(symbol "NE555P_1_1"
 				(pin input line
 					(at -10.16 -5.08 0)
 					(length 2.54)
@@ -1947,7 +1947,7 @@
 		(at 113.03 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "50745c6b-6654-4432-9c12-3de3837d3433")
+		(uuid "2b331628-79f9-432d-b368-6723b0d618b4")
 	)
 	(junction
 		(at 203.2 133.35)
@@ -1978,12 +1978,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5f7d8283-0c4e-4d94-a7c8-d2a0a1582a64")
-	)
-	(junction
-		(at 125.73 73.66)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "64d81332-0976-44b6-8e78-cb68a319cfd4")
 	)
 	(junction
 		(at 182.88 114.3)
@@ -2028,6 +2022,12 @@
 		(uuid "77ef1e4d-23cb-4cca-a552-6741c2076a10")
 	)
 	(junction
+		(at 125.73 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "79c95e21-4cda-4448-84b3-3d30cd07df85")
+	)
+	(junction
 		(at 104.14 133.35)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2038,6 +2038,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9260b975-f14d-4e6e-83d0-b440128d8941")
+	)
+	(junction
+		(at 113.03 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9d1ff111-c9c8-46e4-97ce-ec5e829b35bd")
 	)
 	(junction
 		(at 78.74 133.35)
@@ -2098,12 +2104,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dde757d5-c54a-4d9a-93c4-2fed981412da")
-	)
-	(junction
-		(at 113.03 97.79)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "df8480c8-65ac-46b2-9194-0bbd90fe58a0")
 	)
 	(junction
 		(at 161.29 114.3)
@@ -2473,7 +2473,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 97.79) (xy 113.03 100.33)
+			(xy 113.03 92.71) (xy 113.03 97.79)
 		)
 		(stroke
 			(width 0)
@@ -2693,6 +2693,16 @@
 	)
 	(wire
 		(pts
+			(xy 113.03 97.79) (xy 113.03 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b112484b-2d7e-47dc-b97b-db75f225e1d1")
+	)
+	(wire
+		(pts
 			(xy 213.36 133.35) (xy 223.52 133.35)
 		)
 		(stroke
@@ -2740,16 +2750,6 @@
 			(type default)
 		)
 		(uuid "c1541c48-34e6-4388-baa6-7cb92290c1e4")
-	)
-	(wire
-		(pts
-			(xy 113.03 92.71) (xy 113.03 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c206ab98-d870-4ce1-94df-3da73224e822")
 	)
 	(wire
 		(pts
@@ -4526,6 +4526,104 @@
 		)
 	)
 	(symbol
+		(lib_id "Timer:NE555P")
+		(at 123.19 95.25 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7250772f-c4dd-4968-ba5b-b65fb192971f")
+		(property "Reference" "U2"
+			(at 135.89 88.8298 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "NE555P"
+			(at 135.89 91.3698 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+			(at 123.19 119.38 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ne555.pdf"
+			(at 123.19 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Precision Timers, 555 compatible, PDIP-8"
+			(at 123.19 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "39819e64-cf97-4950-8056-8f73eac6b8b8")
+		)
+		(pin "1"
+			(uuid "70954f7c-7bdc-4048-af21-f98c9a622ed9")
+		)
+		(pin "3"
+			(uuid "e193b9cc-b59f-4b73-8640-bb00b9bbd34b")
+		)
+		(pin "8"
+			(uuid "8d1aebd2-c592-481f-9b75-83bca14d7f2e")
+		)
+		(pin "5"
+			(uuid "2916332a-6354-4da2-8219-dbf85e2b9ed8")
+		)
+		(pin "2"
+			(uuid "16a4e628-e1ac-4aba-8188-6ed1e84424dc")
+		)
+		(pin "6"
+			(uuid "4cfe6f91-1b96-4af5-8917-30a7013af73d")
+		)
+		(pin "7"
+			(uuid "13b39b34-6a95-4e66-8c26-02289c808377")
+		)
+		(instances
+			(project "proyecto2"
+				(path "/2acde91a-b0f1-4d66-bbdb-3257e67dbab9"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_BJT:2N2219")
 		(at 165.1 95.25 0)
 		(mirror x)
@@ -5699,105 +5797,6 @@
 			(project "proyecto2"
 				(path "/2acde91a-b0f1-4d66-bbdb-3257e67dbab9"
 					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Timer:NE555D")
-		(at 123.19 95.25 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "d0c29aa1-0835-41d8-9648-76a266970d55")
-		(property "Reference" "U1"
-			(at 124.206 95.504 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "NE555D"
-			(at 120.0719 105.41 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 123.19 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ne555.pdf"
-			(at 123.19 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Precision Timers, 555 compatible, SOIC-8"
-			(at 123.19 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "5"
-			(uuid "8a47b107-b587-47f4-9523-4376e9aa1103")
-		)
-		(pin "8"
-			(uuid "34df5133-56da-45e2-8b99-64425feda88e")
-		)
-		(pin "2"
-			(uuid "a3d02c75-32fc-46e9-82f1-387d98b9a2e7")
-		)
-		(pin "3"
-			(uuid "494efbc1-eb2a-4066-a787-293a9bca383a")
-		)
-		(pin "7"
-			(uuid "6a6b0af8-fa81-4f91-9c1e-ce03d0948a50")
-		)
-		(pin "6"
-			(uuid "4865f4a8-33d4-4a42-9d3b-667dbf18f41f")
-		)
-		(pin "1"
-			(uuid "56ac7fcb-43ce-4c31-95da-8087f6925d2b")
-		)
-		(pin "4"
-			(uuid "295d6cd3-07df-4246-ab51-c9e7810dd1c3")
-		)
-		(instances
-			(project "proyecto2"
-				(path "/2acde91a-b0f1-4d66-bbdb-3257e67dbab9"
-					(reference "U1")
 					(unit 1)
 				)
 			)
